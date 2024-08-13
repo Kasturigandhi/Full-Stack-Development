@@ -1,0 +1,49 @@
+/* Common styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #4b3621;
+    text-align: center;
+}
+
+p, ul {
+    color: #6b4423;
+}
+
+/* Styles specific to the homepage */
+.homepage {
+    background: url('https://www.shutterstock.com/image-vector/pune-skyline-vector-outline-india-260nw-2390225139.jpg') no-repeat center center fixed;
+    background-size: 120%;
+}
+.about-page {
+    background: #f5f5dc; /* Beige background color */
+}
+
+/* Styles specific to the Attractions page */
+.attractions-page {
+    background: #d2b48c; /* Light brown background color */
+}
+
+/* Styles specific to the Food page */
+.food-page {
+    background: #e0cda9; /* Light beige color */
+}
+
+/* Styles specific to the Contact page */
+.contact-page {
+    background: #f8f4e3; /* Slightly darker beige color */
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to पुणे</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cssbasics.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body class="home-page">
+    <div class="container">
+        <header class="mb-4">
+            <h1>Welcome to Pune</h1>
+        </header>
+        
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <a class="navbar-brand" href="index.html">Pune Tourism</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">|| Know Pune ||</a></li>
+                    <li class="nav-item"><a class="nav-link" href="attractions.html">|| Attractions ||</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">|| Delicacies ||</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">|| Contact Us ||</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section id="welcome">
+            <div class="jumbotron">
+                <h2 class="display-4">Discover Pune!</h2>
+                <p class="lead">Explore the cultural capital of Maharashtra, rich in history, education, and vibrant life. Whether you're a visitor or a resident, Pune has something special to offer.</p>
+                <hr class="my-4">
+                <p>Get started by exploring the attractions, food, and more about this wonderful city.</p>
+                <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+            </div>
+        </section>
+        
+        <section id="highlights">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="attractions.jpg" class="card-img-top" alt="Pune Attractions">
+                        <div class="card-body">
+                            <h5 class="card-title">Explore Attractions</h5>
+                            <p class="card-text">Visit historical sites, beautiful parks, and iconic landmarks.</p>
+                            <a href="attractions.html" class="btn btn-secondary">View Attractions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="food.jpg" class="card-img-top" alt="Pune Food">
+                        <div class="card-body">
+                            <h5 class="card-title">Taste the Flavors</h5>
+                            <p class="card-text">Enjoy Pune's diverse and delicious cuisine, from street food to fine dining.</p>
+                            <a href="food.html" class="btn btn-secondary">Explore Food</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="contact.jpg" class="card-img-top" alt="Contact Us">
+                        <div class="card-body">
+                            <h5 class="card-title">Get in Touch</h5>
+                            <p class="card-text">Need more information? Contact us for assistance and guidance.</p>
+                            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form-section" class="mt-5">
+            <h3>Plan Your Visit</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Visit</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Select Your Interests</label>
+                    <select class="form-control" id="interests" required>
+                        <option value="" disabled selected>Select your interest</option>
+                        <option value="attractions">Attractions</option>
+                        <option value="food">Food</option>
+                        <option value="culture">Culture</option>
+                        <option value="shopping">Shopping</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Mode of Travel</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="travelMode" id="car" value="Car" required>
+                        <label class="form-check-label" for="car">Car</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="travelMode" id="bike" value="Bike" required>
+                        <label class="form-check-label" for="bike">Bike</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="travelMode" id="public" value="Public Transport" required>
+                        <label class="form-check-label" for="public">Public Transport</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <footer class="mt-4">
+            <p>&copy; 2024 Pune Tourism. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
